@@ -1,0 +1,13 @@
+<div [ngStyle]="currentStyle">
+  <p>
+    <button (click)="setBold()">bold!</button>
+    <button (click)="setItalic()">italic!</button>
+  </p>
+</div>
+
+&nbsp;
+<br>
+<br>
+<h1 [ngClass]="{maClasse : discoModEnabled}">Ma classe activable</h1>
+<br>
+<button (click)="setDiscoMod()">DISCO MOD</button>

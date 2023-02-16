@@ -1,0 +1,13 @@
+<p>
+  <input type="text" placeholder="nom" [(ngModel)]="insertNom">
+  <input type="text" placeholder="prénom" [(ngModel)]="insertPrenom">
+  <input type="text" placeholder="age" [(ngModel)]="insertAge">
+  <button (click)="ajouter()">Ajouter</button>
+</p>
+
+<ul>
+  <li *ngFor="let personne of personnes">
+    prénom: {{personne.nom}} nom: {{personne.prenom}} âge: {{personne.age}}
+    <button (click)="supprimer(personne.id)">Supprimer</button>
+  </li>
+</ul>

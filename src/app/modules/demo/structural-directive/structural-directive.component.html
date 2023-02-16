@@ -1,0 +1,29 @@
+<h1>NG IF</h1>
+
+<button (click)="setDisplay()">ON/OFF</button>
+<br>
+<p *ngIf="display">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ornare nisl, eget consequat magna cursus ut. Etiam porta leo sit amet dolor mattis ornare. </p>
+<br>
+
+<h4>NG FOR</h4>
+
+<ul>
+  <li *ngFor="let user of users">Il s'appelle {{user.name}} et a {{user.age}} ans</li>
+</ul>
+<br>
+
+<h4>NG SWITCH</h4>
+
+<select [(ngModel)]="selector">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+
+<div [ngSwitch]="selector">
+  <p *ngSwitchCase="1">1</p>
+  <p *ngSwitchCase="2">2</p>
+  <p *ngSwitchCase="3">3</p>
+  <p *ngSwitchDefault>T'AS RIEN PRIIIIIS</p>
+</div>
+

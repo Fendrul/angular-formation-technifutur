@@ -1,0 +1,12 @@
+<h1>Ma variable = {{ maVariable }}</h1>
+
+<input type="text" [(ngModel)]="maVariable" />
+
+<h2>Even Binding</h2>
+
+<button (click)="clickAddToCounter()" >Click me</button>
+
+<h2>Attribute binding</h2>
+
+<input type="text" [disabled]="attributeBinding" />
+<button (click)="invertOpen()" >invert</button>
